@@ -1,0 +1,111 @@
+.container {
+  width: 1520px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .container {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container {
+    width: 300px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 65px;
+  width: 100%;
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+.header__left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+@media screen and (max-width: 960px) {
+  .header__left ul {
+    display: none;
+  }
+}
+.header__left button {
+  width: 68px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #DDE2E4;
+}
+@media screen and (max-width: 960px) {
+  .header__left button {
+    display: none;
+  }
+}
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.header__right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+@media screen and (max-width: 360px) {
+  .header__right ul {
+    display: none;
+  }
+}
+.header__right .burger {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .header__right .burger {
+    display: block;
+  }
+}
